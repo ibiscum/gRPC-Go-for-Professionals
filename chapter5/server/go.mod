@@ -5,7 +5,6 @@ go 1.20
 replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
-	github.com/PacktPublishing/gRPC-Go-for-Professionals/proto v0.0.0-20230727150523-20a384c47194
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.31.0
 )

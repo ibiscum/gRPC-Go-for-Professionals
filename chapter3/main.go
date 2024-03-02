@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/PacktPublishing/gRPC-Go-for-Professionals/chapter3/proto"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter3/proto"
 	"google.golang.org/protobuf/proto"
 )
 

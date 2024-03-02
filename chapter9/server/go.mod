@@ -5,7 +5,6 @@ go 1.20
 replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
-	github.com/PacktPublishing/gRPC-Go-for-Professionals/proto v0.0.0-20230727150523-20a384c47194
 	github.com/grpc-ecosystem/go-grpc-middleware/providers/prometheus v1.0.0
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.0.1
 	github.com/prometheus/client_golang v1.17.0
@@ -20,7 +19,6 @@ require (
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
-	github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
 	github.com/go-logr/logr v1.3.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
