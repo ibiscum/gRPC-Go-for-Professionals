@@ -18,7 +18,7 @@ import (
 
 	//"google.golang.org/grpc/encoding/gzip"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todo/v2"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter9/proto/todo/v2"
 
 	"github.com/grpc-ecosystem/go-grpc-middleware/v2/interceptors/retry"
 )

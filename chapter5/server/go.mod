@@ -2,9 +2,10 @@ module github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/server
 
 go 1.20
 
-replace github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto => ../proto
+
 
 require (
+	github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto v0.0.0-00010101000000-000000000000
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.31.0
 )

@@ -1,8 +1,6 @@
-module github.com/ibiscum/gRPC-Go-for-Professionals/server
+module github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/server
 
 go 1.20
-
-replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
@@ -12,6 +10,7 @@ require (
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/proto v0.0.0-00010101000000-000000000000
 	golang.org/x/net v0.18.0 // indirect
 	golang.org/x/sys v0.14.0 // indirect
 	golang.org/x/text v0.14.0 // indirect

@@ -1,8 +1,6 @@
-module github.com/ibiscum/gRPC-Go-for-Professionals/server
+module github.com/ibiscum/gRPC-Go-for-Professionals/chapter7/server
 
 go 1.20
-
-replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
 	github.com/ibiscum/gRPC-Go-for-Professionals/proto v0.0.0-00010101000000-000000000000

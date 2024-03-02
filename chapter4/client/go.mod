@@ -1,4 +1,4 @@
-module github.com/ibiscum/gRPC-Go-for-Professionals/client
+module github.com/ibiscum/gRPC-Go-for-Professionals/chapter4/client
 
 go 1.20
 

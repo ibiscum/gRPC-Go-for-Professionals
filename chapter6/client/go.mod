@@ -2,7 +2,6 @@ module github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/client
 
 go 1.20
 
-replace github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/proto => ../proto
 
 require (
 	google.golang.org/grpc v1.59.0
@@ -11,6 +10,7 @@ require (
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/proto v0.0.0-20240302161004-07ce283d2997
 	golang.org/x/net v0.18.0 // indirect
 	golang.org/x/sys v0.14.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
