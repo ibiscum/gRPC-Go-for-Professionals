@@ -1,4 +1,4 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/client
+module github.com/ibiscum/gRPC-Go-for-Professionals/client
 
 go 1.20
 

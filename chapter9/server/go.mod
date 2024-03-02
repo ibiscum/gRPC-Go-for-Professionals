@@ -1,8 +1,8 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/server
+module github.com/ibiscum/gRPC-Go-for-Professionals/server
 
 go 1.20
 
-replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
+replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
 	github.com/grpc-ecosystem/go-grpc-middleware/providers/prometheus v1.0.0

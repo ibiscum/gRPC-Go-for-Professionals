@@ -1,10 +1,11 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/server
+module github.com/ibiscum/gRPC-Go-for-Professionals/server
 
 go 1.20
 
-replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
+replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
+	github.com/ibiscum/gRPC-Go-for-Professionals/proto v0.0.0-00010101000000-000000000000
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.31.0

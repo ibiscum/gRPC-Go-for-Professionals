@@ -1,8 +1,8 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/client
+module github.com/ibiscum/gRPC-Go-for-Professionals/client
 
 go 1.20
 
-replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
+replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.0.1
@@ -10,9 +10,12 @@ require (
 	google.golang.org/protobuf v1.31.0
 )
 
+require github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
+
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/ibiscum/gRPC-Go-for-Professionals/proto v0.0.0-00010101000000-000000000000
 	golang.org/x/net v0.18.0 // indirect
 	golang.org/x/sys v0.14.0 // indirect
 	golang.org/x/text v0.14.0 // indirect

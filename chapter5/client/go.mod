@@ -1,8 +1,8 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/client
+module github.com/ibiscum/gRPC-Go-for-Professionals/client
 
 go 1.20
 
-replace github.com/PacktPublishing/gRPC-Go-for-Professionals/proto => ../proto
+replace github.com/ibiscum/gRPC-Go-for-Professionals/proto => ../proto
 
 require (
 	google.golang.org/grpc v1.59.0

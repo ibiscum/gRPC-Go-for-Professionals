@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pb "github.com/PacktPublishing/gRPC-Go-for-Professionals/proto/todo/v1"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todo/v1"
 )
 
 // addTask calls the AddTask unary endpoint with a AddTaskRequest

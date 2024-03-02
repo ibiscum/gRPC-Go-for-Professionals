@@ -1,4 +1,4 @@
-module github.com/PacktPublishing/gRPC-Go-for-Professionals/helpers
+module github.com/ibiscum/gRPC-Go-for-Professionals/helpers
 
 go 1.20
 

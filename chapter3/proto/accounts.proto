@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "account.proto";
 
-option go_package = "github.com/PacktPublishing/gRPC-Go-for-Professionals/chapter3/proto";
+option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter3/proto";
 
 message Accounts {
   repeated Account values = 1;

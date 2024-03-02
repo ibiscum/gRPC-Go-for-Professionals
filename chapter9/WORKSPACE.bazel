@@ -1,4 +1,4 @@
-workspace(name = "github_com_packtpublishing_grpc_go_for_professionals")
+workspace(name = "github_com_ibiscum_grpc_go_for_professionals")
 
 load(
     "//:versions.bzl",
