@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals";
+option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter2";
 
 enum AccountRight {
   ACCOUNT_RIGHT_UNSPECIFIED = 0;
