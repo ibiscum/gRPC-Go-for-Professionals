@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package dummy.v1;
 
-option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/proto/dummy/v1";
+option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter4/proto/dummy/v1";
 
 message DummyMessage {}
 
