@@ -9,18 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v4
       - name: Install Go
-        uses: actions/setup-go@v3.0.0
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.18.0
+          go-version: 1.22
       - name: Get Go cache paths
         id: go-env
         run: |
           echo "::set-output name=cache::$(go env GOCACHE)"
           echo "::set-output name=modcache::$(go env GOMODCACHE)"
       - name: Set up Go cache
-        uses: actions/cache@v3.0.2
+        uses: actions/cache@v4
         with:
           key: golangci-lint-${{ runner.os }}-go-${{ hashFiles('**/go.mod') }}
           restore-keys: golangci-lint-${{ runner.os }}-go-
@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "::set-output name=dir::$(golangci-lint cache status | head -1 | sed 's/^Dir: //')"
       - name: Set up golangci-lint cache
-        uses: actions/cache@v3.0.2
+        uses: actions/cache@v4
         with:
           key: golangci-lint-${{ runner.os }}-golangci-lint-${{ hashFiles('**/go.mod') }}
           restore-keys: golangci-lint-${{ runner.os }}-golangci-lint-
@@ -51,18 +51,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v4
       - name: Install Go
-        uses: actions/setup-go@v3.0.0
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.18.0
+          go-version: 1.22
       - name: Get Go cache paths
         id: go-env
         run: |
           echo "::set-output name=cache::$(go env GOCACHE)"
           echo "::set-output name=modcache::$(go env GOMODCACHE)"
       - name: Set up Go cache
-        uses: actions/cache@v3.0.2
+        uses: actions/cache@v4
         with:
           key: go-mod-tidy-${{ runner.os }}-go-${{ hashFiles('**/go.mod') }}
           restore-keys: |
