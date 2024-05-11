@@ -38,7 +38,8 @@ func newMetricsServer(httpAddr string, reg *prometheus.Registry) *http.Server {
 	return httpSrv
 }
 
-func newGrpcServer(lis net.Listener, srvMetrics *grpcprom.ServerMetrics) (*grpc.Server, error) {
+// func newGrpcServer(lis net.Listener, srvMetrics *grpcprom.ServerMetrics) (*grpc.Server, error) {
+func newGrpcServer(srvMetrics *grpcprom.ServerMetrics) (*grpc.Server, error) {
 	creds, err := credentials.NewServerTLSFromFile("./certs/server_cert.pem", "./certs/server_key.pem")
 	if err != nil {
 		return nil, err
@@ -110,7 +111,8 @@ func main() {
 		log.Fatalf("unexpected error: %v", err)
 	}
 
-	grpcServer, err := newGrpcServer(lis, srvMetrics)
+	//grpcServer, err := newGrpcServer(lis, srvMetrics)
+	grpcServer, err := newGrpcServer(srvMetrics)
 
 	if err != nil {
 		log.Fatalf("unexpected error: %v", err)
