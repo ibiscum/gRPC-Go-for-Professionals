@@ -5,7 +5,8 @@ import (
 	"io"
 	"time"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todo/v2"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/proto/todo/v2"
+
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/known/fieldmaskpb"
