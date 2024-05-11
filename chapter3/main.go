@@ -48,7 +48,7 @@ func readFromPB() time.Duration {
 
 	start := time.Now()
 	if err = proto.Unmarshal(in, &data); err != nil {
-		log.Fatalln("failed to unmarshal: %v\n", err)
+		log.Fatalf("failed to unmarshal: %v\n", err)
 	}
 	return time.Since(start)
 }

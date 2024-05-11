@@ -14,7 +14,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todo/v2"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter9/proto/todo/v2"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/reflection"

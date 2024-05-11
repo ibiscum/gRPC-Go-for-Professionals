@@ -73,12 +73,15 @@ func (s *server) UpdateTasks(stream pb.TodoService_UpdateTasksServer) error {
 			return err
 		}
 
-		s.d.updateTask(
+		err = s.d.updateTask(
 			req.Id,
 			req.Description,
 			req.DueDate.AsTime(),
 			req.Done,
 		)
+		if err != nil {
+			return err
+		}
 	}
 }
 
@@ -98,7 +101,13 @@ func (s *server) DeleteTasks(stream pb.TodoService_DeleteTasksServer) error {
 			return err
 		}
 
-		s.d.deleteTask(req.Id)
-		stream.Send(&pb.DeleteTasksResponse{})
+		err = s.d.deleteTask(req.Id)
+		if err != nil {
+			return err
+		}
+		err = stream.Send(&pb.DeleteTasksResponse{})
+		if err != nil {
+			return err
+		}
 	}
 }
