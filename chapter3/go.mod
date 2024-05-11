@@ -1,4 +1,4 @@
-module github.com/ibiscum/gRPC-Go-for-Professionals/chapter3/proto
+module github.com/ibiscum/gRPC-Go-for-Professionals/chapter3
 
 go 1.20
 
