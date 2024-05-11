@@ -1,8 +1,9 @@
 module github.com/ibiscum/gRPC-Go-for-Professionals/chapter9
 
-go 1.22.1
+go 1.22
 
 require (
+	github.com/envoyproxy/protoc-gen-validate v1.0.4
 	github.com/grpc-ecosystem/go-grpc-middleware/providers/prometheus v1.0.1
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.1.0
 	github.com/prometheus/client_golang v1.14.0
