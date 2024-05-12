@@ -22,6 +22,7 @@ func addTask(c pb.TodoServiceClient, description string, dueDate time.Time) uint
 		Description: description,
 		DueDate:     timestamppb.New(dueDate),
 	}
+	
 	res, err := c.AddTask(context.Background(), req)
 	if err != nil {
 		panic(err)
