@@ -10,7 +10,7 @@ go_binary(
 go_library(
     name = "client_lib",
     srcs = ["main.go"],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/client",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter4/client",
     visibility = ["//visibility:private"],
     deps = [
         "@org_golang_google_grpc//:go_default_library",

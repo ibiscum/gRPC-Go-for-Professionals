@@ -7,10 +7,11 @@ An example of encoding is the following:
 ## Linux/Mac
 ```shell
 cat account.txt | protoc --encode=Account account.proto | hexdump -C
+
+cat fixed.txt | protoc --encode=Fixed64Value wrappers.proto | hexdump -C
 ```
 
 ## Windows (Powershell)
-
 ```shell
 (Get-Content account.txt | protoc --encode=Account account.proto) -join "`n" | Format-Hex
 ```

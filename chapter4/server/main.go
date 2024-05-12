@@ -19,7 +19,7 @@ func main() {
 	lis, err := net.Listen("tcp", addr)
 
 	if err != nil {
-		log.Fatalf("failed to listen: %v\n", err)
+		log.Fatalf("failed to listen: %v", err)
 	}
 
 	defer func(lis net.Listener) {
@@ -31,12 +31,12 @@ func main() {
 	var opts []grpc.ServerOption
 	s := grpc.NewServer(opts...)
 
-	//registration of endpoints
+	// registration of endpoints
 
 	log.Printf("listening at %s\n", addr)
 
 	defer s.Stop()
 	if err := s.Serve(lis); err != nil {
-		log.Fatalf("failed to serve: %v\n", err)
+		log.Fatalf("failed to serve: %v", err)
 	}
 }
