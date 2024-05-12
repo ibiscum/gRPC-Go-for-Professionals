@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package todo.v1;
+package todo;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo/v1";
+option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo";
 
 message Task {
   uint64 id = 1;

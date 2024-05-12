@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo/v1"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo"
 )
 
 type server struct {
@@ -9,4 +9,3 @@ type server struct {
 
 	pb.UnimplementedTodoServiceServer
 }
-

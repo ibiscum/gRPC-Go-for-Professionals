@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo/v1"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo"
 	"google.golang.org/grpc"
 )
 
