@@ -16,7 +16,7 @@ go_library(
         "main.go",
         "server.go",
     ],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/server",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/server",
     visibility = ["//visibility:private"],
     deps = [
         "//proto/todov2",
