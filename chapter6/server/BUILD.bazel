@@ -16,10 +16,10 @@ go_library(
         "main.go",
         "server.go",
     ],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/server",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/server",
     visibility = ["//visibility:private"],
     deps = [
-        "//proto/todov2:todov2",
+        "//proto/todov2",
         "@org_golang_google_grpc//:go_default_library",
         "@org_golang_google_protobuf//proto",
         "@org_golang_google_protobuf//reflect/protoreflect",
