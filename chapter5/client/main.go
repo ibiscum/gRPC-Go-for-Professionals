@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo/v1"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo"
 )
 
 // addTask calls the AddTask unary endpoint with a AddTaskRequest
@@ -22,7 +22,7 @@ func addTask(c pb.TodoServiceClient, description string, dueDate time.Time) uint
 		Description: description,
 		DueDate:     timestamppb.New(dueDate),
 	}
-	
+
 	res, err := c.AddTask(context.Background(), req)
 	if err != nil {
 		panic(err)

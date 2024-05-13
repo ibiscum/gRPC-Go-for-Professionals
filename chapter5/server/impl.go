@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo/v1"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter5/proto/todo"
 )
 
 // AddTask adds a Task to the database.

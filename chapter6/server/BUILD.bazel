@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_binary(
     name = "server",
     embed = [":server_lib"],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/server",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/server",
     visibility = ["//visibility:public"],
 )
 
@@ -16,10 +16,10 @@ go_library(
         "main.go",
         "server.go",
     ],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/server",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter6/server",
     visibility = ["//visibility:private"],
     deps = [
-        "//proto/todo/v2:todo",
+        "//proto/todov2",
         "@org_golang_google_grpc//:go_default_library",
         "@org_golang_google_protobuf//proto",
         "@org_golang_google_protobuf//reflect/protoreflect",
