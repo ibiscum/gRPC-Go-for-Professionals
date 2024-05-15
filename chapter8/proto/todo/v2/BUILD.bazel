@@ -18,7 +18,7 @@ proto_library(
 pgv_go_proto_library(
     name = "v2_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todo/v2",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todo/v2",
     proto = ":v2_proto",
     deps = ["@com_envoyproxy_protoc_gen_validate//validate:validate_go"],
 )

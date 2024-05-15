@@ -1,7 +1,7 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
 # gazelle:exclude proto/**/*.go
-# gazelle:prefix github.com/ibiscum/gRPC-Go-for-Professionals
+# gazelle:prefix github.com/ibiscum/gRPC-Go-for-Professionals/chapter7
 gazelle(name = "gazelle")
 
 gazelle(
