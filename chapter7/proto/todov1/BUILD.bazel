@@ -18,7 +18,7 @@ go_proto_library(
 )
 
 go_library(
-    name = "todo",
+    name = "todov1",
     embed = [":v1_go_proto"],
     importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter7/proto/todov1",
     visibility = ["//visibility:public"],
