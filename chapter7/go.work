@@ -2,7 +2,6 @@ go 1.22.1
 
 use (
 	./client
-	./proto/todov1
 	./proto/todov2
 	./server
 )

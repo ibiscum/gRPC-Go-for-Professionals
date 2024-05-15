@@ -17,7 +17,7 @@ import (
 
 	//"google.golang.org/grpc/encoding/gzip"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter7/proto/todo/v2"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter7/proto/todov2"
 )
 
 // addTask calls the AddTask unary endpoint with a AddTaskRequest
