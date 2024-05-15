@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package todo.v2;
+package todov2;
 
 import "google/protobuf/field_mask.proto";
 import "google/protobuf/timestamp.proto";
 import "proto/validate/validate.proto";
 
-option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todo/v2";
+option go_package = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todov2";
 
 message Task {
   uint64 id = 1;

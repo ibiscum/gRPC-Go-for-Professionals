@@ -10,14 +10,14 @@ proto_library(
 )
 
 go_library(
-    name = "todo",
+    name = "todov1",
     embed = [":v1_go_proto"],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/proto/chapter8/todov1",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todov1",
     visibility = ["//visibility:public"],
 )
 
 go_library(
-    name = "v1",
+    name = "todov1_validate",
     srcs = ["todo.pb.validate.go"],
     importpath = "",
     visibility = ["//visibility:public"],
@@ -26,7 +26,7 @@ go_library(
 go_proto_library(
     name = "v1_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/proto/todov1",
+    importpath = "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todov1",
     proto = ":v1_proto",
     visibility = ["//visibility:public"],
 )
