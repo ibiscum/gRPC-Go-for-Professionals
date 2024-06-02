@@ -16,6 +16,9 @@ update: ## Updates all the projects
 
 clean: ## Cleans all the generated files
 	./scripts/cleanall.sh
+	
+lint: ## Linting
+	go list -f '{{.Dir}}/...' -m | xargs golangci-lint run
 
 help: ## Shows this help
 	@${HELP_CMD}

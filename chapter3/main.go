@@ -81,5 +81,5 @@ func main() {
 	}
 
 	log.Printf("JSON: %fms", mean(jsonTimes))
-	log.Printf("PB: %fms", mean(pbTimes))
+	log.Printf("PB  : %fms", mean(pbTimes))
 }

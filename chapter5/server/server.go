@@ -6,6 +6,5 @@ import (
 
 type server struct {
 	d db
-
 	pb.UnimplementedTodoServiceServer
 }
