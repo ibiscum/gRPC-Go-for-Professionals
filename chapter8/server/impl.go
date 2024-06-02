@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/todov2"
+	pb "github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/proto/validate"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"

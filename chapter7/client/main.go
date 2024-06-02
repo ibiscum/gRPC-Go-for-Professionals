@@ -170,7 +170,7 @@ func main() {
 		//grpc.WithDefaultCallOptions(grpc.UseCompressor(gzip.Name)),
 		grpc.WithDefaultServiceConfig(`{"loadBalancingConfig": [{"round_robin":{}}]}`),
 	}
-	conn, err := grpc.Dial(addr, opts...)
+	conn, err := grpc.NewClient(addr, opts...)
 
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
