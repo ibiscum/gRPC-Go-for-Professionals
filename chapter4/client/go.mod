@@ -1,6 +1,6 @@
 module github.com/ibiscum/gRPC-Go-for-Professionals/chapter4/client
 
-go 1.22.1
+go 1.23.2
 
 require google.golang.org/grpc v1.69.2
 
