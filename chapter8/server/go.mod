@@ -3,10 +3,12 @@ module github.com/ibiscum/gRPC-Go-for-Professionals/chapter8/server
 go 1.22.1
 
 require (
+	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.1.0
 	github.com/prometheus/client_golang v1.14.0
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.47.0
 	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842
 	golang.org/x/sync v0.7.0
+	google.golang.org/grpc v1.63.2
 	google.golang.org/protobuf v1.34.1
 )
 
